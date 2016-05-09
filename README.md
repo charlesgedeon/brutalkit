@@ -1,4 +1,4 @@
-# Burtal Kit
+# Brutal Kit
 
 ## Changelog
 
