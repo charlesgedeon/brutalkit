@@ -1,0 +1,29 @@
+.bkblink {
+  animation-duration: 1s;
+  animation-name: blinkAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.bkmarquee {
+  animation-duration: 10s;
+  animation-name: marqueeAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  position: absolute;
+}
+
+@keyframes blinkAnimation {
+  0%     { opacity: 1; }
+  49.9%  { opacity: 1; }
+  50%    { opacity: 0; }
+  99.9%  { opacity: 0; }
+  100%   { opacity: 1; }
+}
+
+@keyframes marqueeAnimation {
+  0%     { left: 100%; }
+  99.9%  { left: -100%; }
+  100%   { left: 100%; }
+} 
